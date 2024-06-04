@@ -1,3 +1,5 @@
+Clean architecture project structure
+```
 com.app.clean_architecture
 ├── presentation
 │   ├── ui
@@ -15,3 +17,4 @@ com.app.clean_architecture
     |   └── sp
     └── remote
         └── api
+```
