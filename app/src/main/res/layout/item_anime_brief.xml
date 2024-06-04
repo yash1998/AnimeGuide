@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp10">
+
+    <TextView
+        android:id="@+id/tvAnimeTitle"
+        style="@style/AnimeTitle"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/ivAnimeLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Fullmetal Alchemist: The Sacred Star of Milos" />
+
+    <TextView
+        android:id="@+id/tvAnimeGenre"
+        style="@style/AnimeDescription"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp4"
+        app:layout_constraintEnd_toStartOf="@id/ivAnimeLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAnimeTitle"
+        tools:text="Action, Adventure, Drama, Fantasy" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tvAnimeKnowMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAnimeGenre"
+        android:text="@string/know_more" />
+
+    <ImageView
+        android:id="@+id/ivAnimeLogo"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAnimeTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        tools:src="@tools:sample/backgrounds/scenic" />
+</androidx.constraintlayout.widget.ConstraintLayout>
