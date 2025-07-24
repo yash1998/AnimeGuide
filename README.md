@@ -18,3 +18,8 @@ com.app.clean_architecture
     └── remote
         └── api
 ```
+
+<img src="mainscreen_scroll.png" alt="mainscreen_scroll" width="200"/>
+<img src="anime1detail.png" alt="anime1detail" width="200"/>
+<img src="anime2detail.png" alt="anime2detail" width="200"/>
+
